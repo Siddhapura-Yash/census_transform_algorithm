@@ -1,6 +1,6 @@
 # Stereo Disparity Map using Census Transform
 
-This project generates a disparity map from stereo images using Census Transform and block matching in C++ with OpenCV.
+This project generates a disparity map from stereo images using Census Transform and block matching in C++ with OpenCV. OpenCV is used only for image loading, grayscale conversion, and displaying results.
 
 ## How it works
 
