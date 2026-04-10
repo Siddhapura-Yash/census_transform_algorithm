@@ -26,9 +26,17 @@ Finally, a median filter is applied to reduce noise, and normalization is used t
 - Obstacle detection
 - FPGA / embedded vision
 
+
+## How to compile and run
+```cpp
+g++ census_transform.cpp -o stereo `pkg-config --cflags --libs opencv4`
+env -i HOME=$HOME PATH=/usr/bin:/bin ./stereo
+```
+
 ## Important
 Set correct image path in code before running:
 
 ```cpp
 Mat left_img = imread("/home/yashop/Desktop/census_transform/images/left.png", IMREAD_GRAYSCALE);
 Mat right_img = imread("/home/yashop/Desktop/census_transform/images/right.png", IMREAD_GRAYSCALE);
+```
